@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiderman Web Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">
+        Spiderman Web Effect
+        <img class="spiderman-img" src="/spiderman.png" alt="spiderman" />
+      </h1>
+    </div>
+    <div class="panel">
+      <div class="toggler">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+          class="open"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+          class="close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m4.5 15.75 7.5-7.5 7.5 7.5"
+          />
+        </svg>
+      </div>
+      <div class="panel-controls">
+        <p class="title">Control Panel</p>
+        <label for="dotsNumber">Number of dots:</label>
+        <input name="dotsNumber" type="number" />
+        <label for="captureRadius">Capture Radius (px):</label>
+        <input name="captureRadius" type="number" />
+        <button class="controlApply">Apply</button>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+  </body>
+</html>
